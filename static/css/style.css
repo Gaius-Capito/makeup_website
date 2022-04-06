@@ -250,6 +250,13 @@ body {
   .header__list li {
     margin: 0 0 35px 0;
   }
+
+  .title h2 {
+    font-size: 30px;
+  }
+  .title h3 {
+    font-size: 18px;
+  }
 }
 .about__row {
   padding: 8% 5% 8% 8%;
@@ -332,6 +339,25 @@ body {
 @media (max-width: 767px), (orientation: landscape) and (max-width: 850px) {
   .item__row {
     flex-direction: column;
+  }
+
+  .about__row {
+    padding: 8% 8% 8% 8%;
+  }
+
+  .about-me__body {
+    padding: 0;
+  }
+
+  .about-work__body {
+    align-self: center;
+    padding: 5% 0 0 0;
+    order: 2;
+  }
+
+  .about-work__image img {
+    max-width: 100%;
+    order: 1;
   }
 }
 .brands__row {
