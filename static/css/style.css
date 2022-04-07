@@ -80,6 +80,10 @@ body {
   background: url("/static/img/natural_paper.png");
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -102,7 +106,7 @@ body {
   }
 }
 .text {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
 }
 
@@ -112,11 +116,12 @@ body {
 }
 .title h2 {
   padding: 0 0 1% 0;
-  font-size: 40px;
+  font-size: 41px;
 }
 .title h3 {
   font-size: 30px;
   line-height: 25px;
+  letter-spacing: 2px;
 }
 
 .header__body {
@@ -138,13 +143,14 @@ body {
 }
 
 .header__link {
-  font-size: 20px;
-  margin: 0 20px 0 0;
+  font-size: 24px;
+  margin: 0 55px 0 0;
 }
 
 @media (max-width: 992px) {
   .header__link {
-    font-size: 17px;
+    font-size: 20px;
+    margin: 0 35px 0 0;
   }
 
   .title {
@@ -258,9 +264,13 @@ body {
     font-size: 18px;
   }
 }
+.about__bg {
+  background-color: antiquewhite;
+  border-radius: 5px;
+}
+
 .about__row {
   padding: 8% 5% 8% 8%;
-  background-color: antiquewhite;
   display: flex;
   flex-direction: column;
 }
@@ -283,7 +293,7 @@ body {
 }
 
 .about-me__hi {
-  font-size: 25px;
+  font-size: 29px;
   font-weight: 500;
   margin: 0 0 10% 0;
   text-align: center;
@@ -318,13 +328,13 @@ body {
 
 @media (max-width: 1200px) {
   .text {
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.5;
   }
 }
 @media (max-width: 992px) {
   .text {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.3;
   }
 
@@ -359,9 +369,13 @@ body {
     max-width: 100%;
     order: 1;
   }
+
+  .text {
+    font-size: 18px;
+    line-height: 1.5;
+  }
 }
 .brands__row {
-  background-color: antiquewhite;
   display: flex;
   padding: 15%;
 }
@@ -373,6 +387,161 @@ body {
 }
 .brand img {
   max-width: 100%;
+}
+
+.contacts__row {
+  display: flex;
+  justify-content: center;
+}
+
+.contacts__body {
+  padding: 5% 0 10% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #555555;
+  letter-spacing: 3px;
+}
+
+.contacts__title {
+  font-size: 25px;
+  line-height: 25px;
+  margin: 0 0 15% 0;
+}
+
+.contacts__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  line-height: 25px;
+}
+.contacts__text span {
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .contacts__title {
+    font-size: 20px;
+  }
+
+  .contacts__text {
+    font-size: 15px;
+  }
+
+  .contacts__body {
+    letter-spacing: 2px;
+  }
+}
+.feedback__bg {
+  background-color: antiquewhite;
+  border-radius: 5px;
+}
+
+.feedback__text {
+  text-align: center;
+  padding: 5%;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 3px;
+}
+
+.feedbacks__row {
+  display: flex;
+}
+
+.feedbacks__feedback {
+  flex: 1 1 50%;
+}
+.feedbacks__feedback img {
+  width: 100%;
+  padding: 2%;
+  border-radius: 15px;
+}
+
+@media (max-width: 767px) {
+  .feedbacks__row {
+    flex-direction: column;
+  }
+
+  .feedback__text {
+    font-size: 15px;
+    line-height: 21px;
+    letter-spacing: 1px;
+  }
+}
+.prices__bg {
+  background-color: antiquewhite;
+}
+
+.column__row {
+  display: flex;
+}
+
+.price__link {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  padding: 10%;
+}
+
+.price__icon {
+  flex: 1 1 50%;
+}
+.price__icon img {
+  width: 100%;
+  max-height: 100%;
+}
+
+#zatemnenie {
+  background: rgba(102, 102, 102, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#okno {
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  padding: 15px;
+  border: 3px solid #0000cc;
+  border-radius: 10px;
+  color: #0000cc;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: #fff;
+}
+
+#zatemnenie:target {
+  display: block;
+}
+
+.close {
+  display: inline-block;
+  border: 1px solid #0000cc;
+  color: #0000cc;
+  padding: 0 12px;
+  margin: 10px;
+  text-decoration: none;
+  background: #f2f2f2;
+  font-size: 14pt;
+  cursor: pointer;
+}
+
+.close:hover {
+  background: #e6e6ff;
+}
+
+.footer {
+  padding: 3%;
 }
 
 /*# sourceMappingURL=style.css.map */

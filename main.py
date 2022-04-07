@@ -1,5 +1,4 @@
-from flask import Flask, render_template, url_for
-
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -23,6 +22,11 @@ def price():
 @app.route("/contacts")
 def contacts():
     return render_template('contacts.html')
+
+
+@app.route("/feedbacks")
+def feedbacks():
+    return render_template('feedbacks.html')
 
 
 if __name__ == '__main__':

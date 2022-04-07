@@ -4,3 +4,8 @@ $(document).ready(function () {
         $('body').toggleClass('lock');
     });
 });
+$(document).ready(function () {
+    $('.price__link, .close').click(function (event) {
+        $('body').toggleClass('lock');
+    });
+});
