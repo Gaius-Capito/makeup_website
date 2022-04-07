@@ -5,7 +5,7 @@ $(document).ready(function () {
     });
 });
 $(document).ready(function () {
-    $('.price__link, .close').click(function (event) {
+    $('.price__link, .popup__close, .popup__area').click(function (event) {
         $('body').toggleClass('lock');
     });
 });

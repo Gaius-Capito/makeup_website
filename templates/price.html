@@ -6,6 +6,9 @@
 
 {% block body%}
 <div class="prices">
+    <div id="fixed" class="fixed">
+        <p>#</p>
+    </div>
     <div class="container">
         <div class="prices__bg">
             <div class="prices__row">
@@ -18,68 +21,68 @@
                         <div class="price__row">
                             <div class="price__link">
                                 <div class="price__icon">
-                                    <a href="#zatemnenie"><img src="/static/img/look/l1.jpg"></a>
+                                    <a href="#popup1"><img src="/static/img/look/l1.jpg"></a>
                                 </div>
                                 <div class="price__body">
-                                    <a href="#zatemnenie">Какой-то текст об услуге</a>
+                                    <a href="#popup1">Какой-то текст об услуге</a>
                                 </div>
                             </div>
                             <div class="price__link">
                                 <div class="price__icon">
-                                    <a href="#zatemnenie"><img src="/static/img/look/l2.jpg"></a>
+                                    <a href="#popup2"><img src="/static/img/look/l2.jpg"></a>
                                 </div>
                                 <div class="price__body">
-                                    <a href="#zatemnenie">Какой-то текст об услуге</a>
+                                    <a href="#popup2">Какой-то текст об услуге</a>
                                 </div>
                             </div>
                             <div class="price__link">
                                 <div class="price__icon">
-                                    <a href="#zatemnenie"><img src="/static/img/look/l3.jpg"></a>
+                                    <a href="#popup3"><img src="/static/img/look/l3.jpg"></a>
                                 </div>
                                 <div class="price__body">
-                                    <a href="#zatemnenie">Какой-то текст об услуге</a>
+                                    <a href="#popup3">Какой-то текст об услуге</a>
                                 </div>
                             </div>
                             <div class="price__link">
                                 <div class="price__icon">
-                                    <a href="#zatemnenie"><img src="/static/img/look/l4.jpg"></a>
+                                    <a href="#popup4"><img src="/static/img/look/l4.jpg"></a>
                                 </div>
                                 <div class="price__body">
-                                    <a href="#zatemnenie">Какой-то текст об услуге</a>
+                                    <a href="#popup4">Какой-то текст об услуге</a>
                                 </div>
                             </div>
                         </div>
                         <div class="price__row">
                             <div class="price__link">
                                 <div class="price__icon">
-                                    <a href="#zatemnenie"><img src="/static/img/look/l5.jpg"></a>
+                                    <a href="#popup5"><img src="/static/img/look/l5.jpg"></a>
                                 </div>
                                 <div class="price__body">
-                                    <a href="#zatemnenie">Какой-то текст об услуге</a>
+                                    <a href="#popup5">Какой-то текст об услуге</a>
                                 </div>
                             </div>
                             <div class="price__link">
                                 <div class="price__icon">
-                                    <a href="#zatemnenie"><img src="/static/img/look/l6.jpg"></a>
+                                    <a href="#popup6"><img src="/static/img/look/l6.jpg"></a>
                                 </div>
                                 <div class="price__body">
-                                    <a href="#zatemnenie">Какой-то текст об услуге</a>
+                                    <a href="#popup6">Какой-то текст об услуге</a>
                                 </div>
                             </div>
                             <div class="price__link">
                                 <div class="price__icon">
-                                    <a href="#zatemnenie"><img src="/static/img/look/l7.jpg"></a>
+                                    <a href="#popup7"><img src="/static/img/look/l7.jpg"></a>
                                 </div>
                                 <div class="price__body">
-                                    <a href="#zatemnenie">Какой-то текст об услуге</a>
+                                    <a href="#popup7">Какой-то текст об услуге</a>
                                 </div>
                             </div>
                             <div class="price__link">
                                 <div class="price__icon">
-                                    <a href="#zatemnenie"><img src="/static/img/look/l8.jpg"></a>
+                                    <a href="#popup8"><img src="/static/img/look/l8.jpg"></a>
                                 </div>
                                 <div class="price__body">
-                                    <a href="#zatemnenie">Какой-то текст об услуге</a>
+                                    <a href="#popup8">Какой-то текст об услуге</a>
                                 </div>
                             </div>
                         </div>
@@ -87,10 +90,109 @@
                 </div>
             </div>
         </div>
-        <div id="zatemnenie">
-            <div id="okno">
-                Всплывающее окошко!<br>
-                <a href="#" class="close">Закрыть окно</a>
+
+        <div id="popup1" class="popup">
+            <a href="#fixed" class="popup__area"></a>
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#fixed" class="popup__close">TTTTT</a>
+                    <div class="popup__title">Модальное окно 1</div>
+                    <div class="popup__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem beatae error facere, in
+                        similique?
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup2" class="popup">
+            <a href="#fixed" class="popup__area"></a>
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#fixed" class="popup__close">TTTTT</a>
+                    <div class="popup__title">Модальное окно 1</div>
+                    <div class="popup__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem beatae error facere, in
+                        similique?
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup3" class="popup">
+            <a href="#fixed" class="popup__area"></a>
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#fixed" class="popup__close">TTTTT</a>
+                    <div class="popup__title">Модальное окно 1</div>
+                    <div class="popup__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem beatae error facere, in
+                        similique?
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup4" class="popup">
+            <a href="#fixed" class="popup__area"></a>
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#fixed" class="popup__close">TTTTT</a>
+                    <div class="popup__title">Модальное окно 1</div>
+                    <div class="popup__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem beatae error facere, in
+                        similique?
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup5" class="popup">
+            <a href="#fixed" class="popup__area"></a>
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#fixed" class="popup__close">TTTTT</a>
+                    <div class="popup__title">Модальное окно 1</div>
+                    <div class="popup__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem beatae error facere, in
+                        similique?
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup6" class="popup">
+            <a href="#fixed" class="popup__area"></a>
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#fixed" class="popup__close">TTTTT</a>
+                    <div class="popup__title">Модальное окно 1</div>
+                    <div class="popup__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem beatae error facere, in
+                        similique?
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup7" class="popup">
+            <a href="#fixed" class="popup__area"></a>
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#fixed" class="popup__close">TTTTT</a>
+                    <div class="popup__title">Модальное окно 1</div>
+                    <div class="popup__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem beatae error facere, in
+                        similique?
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup8" class="popup">
+            <a href="#fixed" class="popup__area"></a>
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#fixed" class="popup__close">TTTTT</a>
+                    <div class="popup__title">Модальное окно 1</div>
+                    <div class="popup__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem beatae error facere, in
+                        similique?
+                    </div>
+                </div>
             </div>
         </div>
     </div>
