@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block title%}
+Портфолио
+{% endblock %}
+
+{% block body%}
+<div class="portfolio">
+    <div class="container">
+        <div class="portfolio__content">
+            <nav class="portfolio__menu">
+                <ul class="portfolio__list">
+                    <li>Свадебное портфолио</li>
+                    <li>Съемки для брендов</li>
+                </ul>
+                <div class="portfolio__text">
+                    <p>Какой-то текст не очень большой</p>
+                    <p>На две строчки. Строчек может быть больше</p>
+                </div>
+                <div class="portfolio__blocks photos">
+                    <div class="photos__block ksenia">
+                        <div class="ksenia__first-column">
+                            <div class="ksenia__photo ksenia__photo_main">
+                                <img src="/static/img/portfolio/ksen/ks1.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="ksenia__second-column-">
+                            <div class="ksenia__photo ksenia__photo_second">
+                                <img src="/static/img/portfolio/ksen/ks2.jpeg" alt="">
+                            </div>
+                            <div class="ksenia__photo ksenia__photo_second">
+                                <img src="/static/img/portfolio/ksen/ks3.jpeg" alt="">
+                            </div>
+                            <div class="ksenia__photo ksenia__photo_second">
+                                <img src="/static/img/portfolio/ksen/ks4.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photos__block anastasia">
+                        <div class="anastasia__first-column">
+                            <div class="anastasia__photo anastasia__photo_first">
+                                <img src="/static/img/portfolio/ana/a1.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="anastasia__second-column">
+                            <div class="anastasia__photo anastasia__photo_second">
+                                <img src="/static/img/portfolio/ana/a3.jpeg" alt="">
+                            </div>
+                            <div class="anastasia__photo anastasia__photo_second">
+                                <img src="/static/img/portfolio/ana/a2.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+{% endblock %}

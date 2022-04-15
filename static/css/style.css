@@ -266,7 +266,7 @@ body.lock {
 }
 .about__bg {
   background-color: antiquewhite;
-  border-radius: 5px;
+  border-radius: 7px;
 }
 
 .about__row {
@@ -286,6 +286,7 @@ body.lock {
 
 .about-me__image img {
   max-width: 100%;
+  border-radius: 4px;
 }
 
 .about-me__body {
@@ -312,6 +313,7 @@ body.lock {
 
 .about-work__image img {
   max-width: 100%;
+  border-radius: 4px;
 }
 
 .about-work__body {
@@ -455,8 +457,8 @@ body.lock {
 }
 .feedbacks__feedback img {
   width: 100%;
-  padding: 2%;
-  border-radius: 15px;
+  padding: 4%;
+  box-shadow: 14px 17px 37px -15px rgba(123, 124, 45, 0.1);
 }
 
 @media (max-width: 767px) {
@@ -477,7 +479,7 @@ body.lock {
 
 .prices__title {
   text-align: center;
-  padding: 10% 5% 5% 5%;
+  padding: 10% 5% 0% 5%;
   font-size: 23px;
   line-height: 25px;
   letter-spacing: 1px;
@@ -521,6 +523,7 @@ body.lock {
   overflow: hidden;
 }
 .price__icon img {
+  padding-top: 5%;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -776,11 +779,94 @@ body.lock {
   .price__body {
     font-size: 15px;
   }
-
-  .price__icon:first-child {
-    padding-top: 5%;
-  }
 }
+.portfolio__content {
+  background-color: antiquewhite;
+}
+
+.portfolio__list {
+  font-size: 16px;
+  line-height: 30px;
+}
+.portfolio__list li {
+  display: inline-block;
+}
+
+.portfolio__text {
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 25px;
+  padding: 0 15px;
+}
+
+.photos__block {
+  height: 1000px;
+  display: flex;
+}
+
+.ksenia__first-column {
+  flex: 1 1 65%;
+}
+
+.ksenia__photo_main {
+  width: 100%;
+  height: 100%;
+}
+
+.ksenia__photo {
+  padding: 2%;
+}
+.ksenia__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.ksenia__second-column- {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 35%;
+}
+.ksenia__second-column- img {
+  object-position: 50% 40%;
+}
+
+.ksenia__photo_second {
+  height: 33%;
+}
+
+.anastasia {
+  flex-direction: column;
+}
+
+.anastasia__second-column {
+  display: flex;
+}
+
+.anastasia__photo {
+  padding: 2%;
+}
+.anastasia__photo img {
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.anastasia__photo_first img {
+  width: 100%;
+  height: 450px;
+}
+
+.anastasia__photo_second {
+  flex: 1 1 50%;
+}
+.anastasia__photo_second img {
+  width: 100%;
+  height: 450px;
+}
+
 .footer {
   padding: 3%;
 }

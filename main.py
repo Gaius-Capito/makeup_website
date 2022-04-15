@@ -9,11 +9,6 @@ def index():
     return render_template('index.html')
 
 
-@app.route("/about")
-def about():
-    return render_template('about.html')
-
-
 @app.route("/price")
 def price():
     return render_template('price.html')
@@ -27,6 +22,11 @@ def contacts():
 @app.route("/feedbacks")
 def feedbacks():
     return render_template('feedbacks.html')
+
+
+@app.route("/portfolio")
+def portfolio():
+    return render_template('portfolio.html')
 
 
 if __name__ == '__main__':
